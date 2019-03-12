@@ -1,5 +1,10 @@
-import SampleElement from "./SampleElement";
-import EchoElement from "./EchoElement";
+import SampleElement from "SampleElement";
+import EchoElement from "EchoElement";
+import TabsElement from "TabsElement";
+import SeparatorElement from "./SepatatorElement";
 
-window.customElements.define("sample-element", SampleElement)
-window.customElements.define("echo-element", EchoElement)
+
+TabsElement.register();
+SampleElement.register();
+EchoElement.register();
+SeparatorElement.register();

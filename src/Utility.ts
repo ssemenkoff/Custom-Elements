@@ -12,6 +12,7 @@ export const customElement = (config: CustomElementConfig) => (target: any) => {
 
   target.prototype.template = config.template
   target.prototype.useShadow = config.useShadow
+  target.prototype.selector = config.selector
 }
 
 const validateSelector = (selector: string) => {

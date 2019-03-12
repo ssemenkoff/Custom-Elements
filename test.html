@@ -13,6 +13,14 @@
 </head>
 <body>
   <sample-element></sample-element>
+  <separator-element></separator-element>
   <echo-element>Hello there</echo-element>
+  <separator-element></separator-element>
+  <tabs-element>
+    <div slot="tab">Title 1</div>
+    <div slot="content" aria="1">Some test text</div>
+    <div slot="tab" aria-for="2">Title 2</div>
+    <div slot="content">Some test text 2</div>
+  </tabs-element>
 </body>
 </html>
