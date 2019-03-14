@@ -21,6 +21,14 @@ export default class BaseCustomElement extends HTMLElement {
     }
   }
 
+  connectedCallback() {}
+
+  disconnectedCallback() {}
+
+  adoptedCallback() {}
+
+  attributeChangedCallback() {}
+
   static register() {
     window.customElements.define(this.prototype.selector, this)
   }

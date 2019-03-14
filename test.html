@@ -10,9 +10,14 @@
   <script>
     require(["EntryPoint"])
   </script>
+  <style>
+    body {
+      padding-bottom: 100px;
+    }
+  </style>
 </head>
 <body>
-  <sample-element></sample-element>
+  <sample-element aria-describedby-tooltip="tooltip"></sample-element>
   <separator-element></separator-element>
   <echo-element>Hello there</echo-element>
   <separator-element></separator-element>
@@ -22,5 +27,10 @@
     <div slot="tab" aria-for="2">Title 2</div>
     <div slot="content">Some test text 2</div>
   </tabs-element>
+  <separator-element></separator-element>
+  <p aria-describedby-tooltip="tooltip">Some hard to understand information</p>
+  <tooltip-element id="tooltip">Now it's much more clear</tooltip-element>
+  <separator-element></separator-element>
+  <resizable-div-element style="width: 500px; height: 300px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit tempora laboriosam reiciendis earum voluptatibus amet repudiandae laborum distinctio. Similique voluptas voluptatibus eaque laborum dolorum ut laboriosam soluta ad velit provident.</resizable-div-element>
 </body>
 </html>
